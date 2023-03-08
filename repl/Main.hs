@@ -129,6 +129,7 @@ repl st =
   do putStr "Π> "
      l <- getLine
      case trim l of
+       "" -> repl st
        ":dump" ->
          print (topState st) *> repl st
        ":quit" ->

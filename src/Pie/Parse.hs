@@ -251,7 +251,11 @@ ident =
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     isSpecialInit c = c `elem` "!$%&*/:<=>?^_~"
 
-    constituentCats = [UppercaseLetter, LowercaseLetter, TitlecaseLetter, ModifierLetter, OtherLetter, NonSpacingMark, LetterNumber, OtherNumber, DashPunctuation, ConnectorPunctuation, OtherPunctuation, CurrencySymbol, MathSymbol, ModifierSymbol, OtherSymbol, PrivateUse]
+    constituentCats = [UppercaseLetter, LowercaseLetter, TitlecaseLetter,
+                       ModifierLetter, OtherLetter, NonSpacingMark,
+                       LetterNumber, OtherNumber, DashPunctuation,
+                       ConnectorPunctuation, OtherPunctuation, CurrencySymbol,
+                       MathSymbol, ModifierSymbol, OtherSymbol, PrivateUse]
 
     subseqCats = [DecimalNumber, SpacingCombiningMark, EnclosingMark]
 
